@@ -7,13 +7,14 @@ const day = hour * 24;
 
 let targetDate = date;
 
-let x = setInterval(function () {
+let x = setInterval(function() {
     
     let now = new Date().getTime();
     let distance = targetDate - now;
 
     document.querySelector('#days').innerHTML = Math.floor(distance / (day)) + "days, ";
-    
-    
-    // resume at line 23, type in the messages and try and understand to a point you can write it by your self.
-    
+    document.querySelector('#hours').inntHTML = Math.floor((distance % (day)) / (hour)) + "hours, ";
+    document.querySelector('#minutes').innerHTML = Math.floor((distance % (hour)) / (minute)) + " minutes, ";
+    ('#seconds').innerHTML = Math.floor((distance % (minute)) / second)+" seconds ";
+}, second)
+
