@@ -24,6 +24,8 @@ let x = setInterval(function () {
     document.querySelector('#hours').innerHTML = Math.floor((distance % (day)) / (hour))+" hours, ";
     document.querySelector('#minutes').innerHTML = Math.floor((distance % (hour)) / (minute))+" minutes, ";
     document.querySelector('#seconds').innerHTML = Math.floor((distance % (minute)) / second)+" seconds ";
-  }, second)
+}, second)
+  
+// add js to update any one who- enters email and submits- once a day at noon with time left remaining.
     
   
